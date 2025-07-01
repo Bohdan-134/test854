@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gulp Test</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link href="https://fonts.cdnfonts.com/css/cera-round-pro-demo" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container type-default">
+        <div class="header-content">
+            <div class="btn-wrapper">
+                <button class="button type__login">Log in</button>
+            </div>
+        </div>
+    </div>
+</header>
+  <main>
+  <div class="hero-block">
+    <div class="block-content">
+            <h1 class="title type-main">It’s a hot place for your <br> streaming fantasy.</h1>
+            <p class="text type-main">It’s a free space for watching streams <br> and chatting with alluring people.</p>
+    </div>
+</div>
+  <div class="slider-form-block">
+    <div class="block-content">
+        <div class="swiper swiper-form">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide type-login">
+    <div class="slide-content">
+        <div class="top-part">
+            <div class="btn-wrapper">
+                <button class="button type__sign">
+                    <span>
+                        <img src="./icons/google.svg" alt="google">
+                    </span>
+                    Sign up with Google
+                </button>
+            </div>
+            <span class="form-divider">or</span>
+        </div>
+        <div class="middle-part">
+            <form id="form-login" class="form type1">
+                <div class="form-group">
+                  <label for="email" class="text type-xs">Email</label>
+                  <input type="email" id="email" placeholder="e.g. Alex@email.com" class="form-input" />
+                </div>
+                <div class="form-group">
+                  <label for="password" class="text type-xs">Password</label>
+                  <div class="form-input-wrapper">
+                    <input type="password" id="password" placeholder="8+ characters" class="form-input" />
+                    <button type="button" class="toggle-password" aria-label="Show password">
+                        <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.8698 6.962C20.3438 7.582 20.3438 8.419 19.8698 9.038C18.3768 10.987 14.7948 15 10.6128 15C6.4308 15 2.8488 10.987 1.3558 9.038C1.12519 8.74113 1 8.37592 1 8C1 7.62408 1.12519 7.25887 1.3558 6.962C2.8488 5.013 6.4308 1 10.6128 1C14.7948 1 18.3768 5.013 19.8698 6.962V6.962Z" stroke="#8789A1" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10.6128 11C12.2697 11 13.6128 9.65685 13.6128 8C13.6128 6.34315 12.2697 5 10.6128 5C8.95595 5 7.61281 6.34315 7.61281 8C7.61281 9.65685 8.95595 11 10.6128 11Z" stroke="#8789A1" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                    </button>
+                  </div>
+                </div>
+                <div class="btn-wrapper">
+                    <button type="submit" class="button type__sign">
+                        <span>
+                            <img src="./icons/mail.svg" alt="mail">
+                        </span>
+                        Sign up with Google
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="bottom-part">
+            <p class="text type2">You hereby confirm that you are fully able and competent to access Livebeam and comply with the Terms of Use & Service, and are at least eighteen (18) years of age or the age of majority under the law of the jurisdiction of your residence and the one you are accessing Livebeam from.</p>
+        </div>
+    </div>
+</div>
+                <div class="swiper-slide type-registration">
+    <div class="slide-content">
+        <form id="form-registration" class="form type1">
+
+            <div class="form-group">
+              <label class="text type-xs">I am</label>
+              <div class="gender-select">
+                <button type="button" class="gender-btn">Male</button>
+                <button type="button" class="gender-btn">Female</button>
+              </div>
+            </div>
+          
+            <div class="form-group">
+              <label for="name" class="text type-xs">My name is</label>
+              <input type="text" id="name" class="form-input" placeholder="e.g. Alex" />
+            </div>
+          
+            <div class="form-group">
+              <label for="birth" class="text type-xs">I was born</label>
+              <input type="text" id="birth" class="form-input" placeholder="MM/DD/YYYY" />
+            </div>
+          
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="terms" />
+              <label for="terms" class="text type-xs">
+                I have read understand and agree to, Terms of Use, Privacy Policy, Disclosures&Disclaimers.
+              </label>
+            </div>
+          
+            <button type="submit" class="button type1">Sign up now</button>
+          </form>
+    </div>
+</div>
+            </div>
+        </div>
+        <div class="swiper-pagination">
+            <button class="custom-dot" data-slide="0"></button>
+            <button class="custom-dot" data-slide="1"></button>
+        </div>
+    </div>
+</div>
+  <section class="section type-full">
+    <div class="section-content">
+        <div class="swiper type1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/slide1.gif" alt="GIF 1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/slide2.gif" alt="GIF 2" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/slide3.gif" alt="GIF 3" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/slide1.gif" alt="GIF 1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/slide2.gif" alt="GIF 2" />
+              </div>
+            </div>
+        </div>
+    </div>
+</section>
+  <section class="section section-about-us type-default">
+    <div class="section-content">
+        <h2 class="title type-main">About</h2>
+        <p class="text type-main">It’s a global<b>streaming platform</b> for communication and meeting incredibly beautiful people. We created an excellent place where you can enjoy your time and <b>find appropriate matches</b> at first.</p>
+        <br>
+        <p class="text type-main">Approximately 80% of our users have already found their lovelies. <b>Watch streams</b> w  ithout hindrance and meet someone <b>who interests you.</b></p>
+        <div class="btn-wrapper">
+            <button class="button type1" data-scroll="to-form">Join for free</button>
+        </div>
+    </div>
+</section>
+  <section class="section section-why-join-us type-default">
+    <div class="section-content">
+      <h2 class="title type-main">Why join us?</h2>
+      <div class="swiper why-join-swiper">
+        <div class="swiper-wrapper why-join-wrapper">
+          <div class="why-join__item swiper-slide">
+            <div class="top-part">
+                <img src="icons/chat.svg" alt="chat" />
+                <h3>Chat with attractive streamers for free</h3>
+            </div>
+            <p class="text type-xs">It’s an excellent web platform for streaming. Write messages to the beautiful streamers for free and explore this magical universe of communication!</p>
+          </div>
+          <div class="why-join__item swiper-slide">
+            <div class="top-part">
+                <img src="icons/verify.svg" alt="verified" />
+                <h3>Only verified users</h3>
+            </div>
+            <p class="text type-xs">We care about the privacy and security of our customers. All accounts are verified so look for an attractive stranger confidently!</p>
+          </div>
+          <div class="why-join__item swiper-slide">
+            <div class="top-part">
+                <img src="icons/search.svg" alt="search" />
+                <h3>Customized search</h3>
+            </div>
+            <p class="text type-xs">Match alluring partners for your own preferences. Maybe you will be interested in a hot slender European or shy beautiful Asian? Make your choice…</p>
+          </div>
+          <div class="why-join__item swiper-slide">
+            <div class="top-part">
+                <img src="icons/easy.svg" alt="easy" />
+                <h3>Easy to use</h3>
+            </div>
+            <p class="text type-xs">Forget about hundreds of annoying notifications and inconvenient use. We have created the platform as easy to use and search as possible. Don’t waste your time studying functionality. Just enjoy!</p>
+          </div>
+        </div>
+      </div>
+      <div class="decor-img">
+        <img src="../../images/streamer4.webp" alt="stramer">
+      </div>
+    </div>
+  </section>
+  <section class="section section-features type-default">
+    <div class="section-content">
+      <h2 class="title type-main">Here you can find</h2>
+      <div class="features-list">
+        <div class="features-item">
+          <img src="icons/pc.svg" alt="pc icon" />
+          <p class="text type-main">Watching streams of everyone you really like;</p>
+        </div>
+        <div class="features-item">
+          <img src="icons/girl.svg" alt="girl icon" />
+          <p class="text type-main">Free communication with pretty streamers;</p>
+        </div>
+        <div class="features-item">
+          <img src="icons/mail2.svg" alt="mail icon" />
+          <p class="text type-main">Sweet connection with people you match;</p>
+        </div>
+        <div class="features-item">
+          <img src="icons/skate.svg" alt="skate icon" />
+          <p class="text type-main">New acquaintances with someone who has similar interests;</p>
+        </div>
+        <div class="features-item">
+          <img src="icons/sound.svg" alt="sound icon" />
+          <p class="text type-main">Fascinating hobbies and exciting occupations from people you fancy.</p>
+        </div>
+      </div>
+    </div>
+</section>
+  <section class="section section-platform-overview type-full">
+    <div class="section-content">
+      <h2 class="title type-main">It’s a universe of communication and<br>streaming without borders!</h2>
+      <p class="text type-main">
+        Let yourself to be free – share your thoughts,<br>
+        delight, and fears with beautiful strangers!
+      </p>
+      <div class="swiper platform-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/streamer1.webp" alt="streamer 1" /></div>
+          <div class="swiper-slide"><img src="images/streamer2.webp" alt="streamer 2" /></div>
+          <div class="swiper-slide"><img src="images/streamer3.webp" alt="streamer 3" /></div>
+          <div class="swiper-slide"><img src="images/streamer4.webp" alt="streamer 4" /></div>
+          <div class="swiper-slide"><img src="images/streamer5.webp" alt="streamer 5" /></div>
+          <div class="swiper-slide"><img src="images/streamer1.webp" alt="streamer 1" /></div>
+          <div class="swiper-slide"><img src="images/streamer2.webp" alt="streamer 2" /></div>
+          <div class="swiper-slide"><img src="images/streamer3.webp" alt="streamer 3" /></div>
+          <div class="swiper-slide"><img src="images/streamer4.webp" alt="streamer 4" /></div>
+          <div class="swiper-slide"><img src="images/streamer5.webp" alt="streamer 5" /></div>
+        </div>
+      </div>
+  
+      <div class="btn-wrapper">
+        <button class="button type1" data-scroll="to-form">Join us for free</button>
+      </div>
+    </div>
+  </section>
+  <section class="section section-cta-communication type-default">
+    <div class="section-content">
+        <div class="left-part">
+            <h2 class="title type-main">It’s a dedicated space for <br> your bold fantasies!</h2>
+            <p class="text type-main">Hundreds of attractive admirers are already waiting for <br> you here. Don’t delay – dive into the world of streaming,<br> flirting, and hot communication right now!</p>
+            <div class="btn-wrapper">
+                <button class="button type1 dinamic-text" data-scroll="to-form">Write to her</button>
+            </div>
+        </div>
+        <div class="right-part">
+            <picture>
+                <source media="(max-width: 768px)" srcset="images/decor-mobile.webp">
+                <img src="images/decor-desktop.webp" alt="decor image">
+            </picture>
+        </div>
+    </div>
+</section>
+  </main>
+  <footer class="footer">
+    <div class="container type-default">
+        <div class="footer-content">
+            <div class="left-part">
+                <ul class="footer-info__list">
+                    <li><a href="#" class="link type-default">support@gmail.com</a></li>
+                    <li><a href="#" class="link type-default">Unsubscribe</a></li>
+                </ul>
+            </div>
+            <div class="right-part">
+                <nav class="footer-navigation">
+                    <ul class="list">
+                        <li>Legal terms</li>
+                        <li>
+                            <a href="/page404.html" class="link type-default">Terms of Use</a>
+                        </li>
+                        <li>
+                            <a href="/page404.html" class="link type-default">Diclosures&Disclaimers</a>
+                        </li>
+                    </ul>
+                    <ul class="list">
+                        <li>Privacy info</li>
+                        <li>
+                            <a href="/page404.html" class="link type-default">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="/page404.html" class="link type-default">Cookie Policy</a>
+                        </li>
+                    </ul>
+                    <ul class="list">
+                        <li>About</li>
+                        <li>
+                            <a href="/page404.html" class="link type-default">About Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
