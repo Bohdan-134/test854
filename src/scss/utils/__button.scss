@@ -75,6 +75,11 @@
         text-align: center;
         transition: .3s;
 
+        @media screen and (max-width: $breakpoint__mobile) {
+            font-size: 12px;
+            border-radius: 6px;
+        }
+
         &:hover {
             background-color: #1666cf;
         }
@@ -92,6 +97,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
+
+            @media screen and (max-width: $breakpoint__mobile) {
+                width: 34px;
+                height: 34px;
+            }
         }
     }
 }

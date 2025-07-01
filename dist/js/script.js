@@ -1,4 +1,5 @@
 const swiper = new Swiper('.swiper.swiper-form', {
+    spaceBetween: 20,
     loop: true,
     autoHeight: true,
     pagination: {

@@ -4,7 +4,6 @@
     height: 750px;
 
     @media screen and (max-width: $breakpoint__mobile) {
-        overflow: hidden;
         margin: 0 -20px;
         width: calc(100% + 40px) !important;
     }
@@ -64,10 +63,11 @@
 
             @media screen and (max-width: $breakpoint__mobile) {
                 opacity: 1;
-                height: 400px;
-                right: -40px;
+                height: 630px;
+                width: 650px;
+                right: -150px;
                 bottom: auto;
-                top: 0;
+                top: -94px;
             }
 
             img {

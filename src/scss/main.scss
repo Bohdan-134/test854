@@ -21,6 +21,9 @@ body {
 }
 
 main {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
   padding: 0 40px;
   flex: 1;
   display: grid;
@@ -28,6 +31,31 @@ main {
     1fr
     repeat(10, minmax(0, 135px))
     1fr;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 322px;
+    right: -258px;
+    width: 100%;
+    height: 3345px;
+    background: url(../images/bg-desctop.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    @media screen and (max-width: $breakpoint__mobile) {
+      background: url(../images/bg-mobile.webp);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      height: 2075px;
+      width: 405px;
+      right: auto;
+      top: auto;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 74px;
+    }
+  }
 
   @media screen and (max-width: $breakpoint__mobile) {
     padding: 93px 20px 60px 20px;
@@ -175,10 +203,22 @@ section {
     flex-direction: column;
     gap: 27px;
 
+    @media screen and (max-width: $breakpoint__mobile) {
+      gap: 20px;
+    }
+
     .form-group {
       display: flex;
       flex-direction: column;
       gap: 12px;
+
+      @media screen and (max-width: $breakpoint__mobile) {
+        gap: 7px;
+
+        label {
+          font-size: 12px !important;
+        }
+      }
     }
 
     .form-input-wrapper {
@@ -196,10 +236,19 @@ section {
         justify-content: center;
         align-items: center;
 
+        @media screen and (max-width: $breakpoint__mobile) {
+          right: 5px;
+        }
+
         svg {
           
           path {
             transition: .3s;
+          }
+
+          @media screen and (max-width: $breakpoint__mobile) {
+            width: 15px;
+            height: 10px;
           }
 
         }
@@ -229,6 +278,13 @@ section {
       font-size: 18px;
       transition: .3s;
 
+      @media screen and (max-width: $breakpoint__mobile) {
+          height: 35px;
+          padding: 12px;
+          border-radius: 6px;
+          font-size: 12px;
+      }
+
       &:focus {
         background-color: #e5e9ed;
       }
@@ -245,6 +301,10 @@ section {
       width: 100%;
       height: 60px;
 
+      @media screen and (max-width: $breakpoint__mobile) {
+        height: 35px;
+      }
+
       button {
         flex: 1;
         background-color: #F5F7F9;
@@ -253,6 +313,10 @@ section {
         font-weight: 400;
         color: $color__grey;
         transition: .3s;
+
+        @media screen and (max-width: $breakpoint__mobile) {
+          font-size: 12px;
+        }
 
         &.active {
           background-color: $color__blue;
@@ -285,6 +349,10 @@ section {
       flex-direction: row;
       align-items: flex-start;
       gap: 13px;
+
+      label {
+        color: #8789A1;
+      }
     }
 
     #terms {
@@ -301,6 +369,12 @@ section {
       display: inline-block;
       vertical-align: middle;
       transition: 0.2s;
+
+      @media screen and (max-width: $breakpoint__mobile) {
+        width: 17px;
+        min-width: 17px;
+        height: 17px;
+      }
     
       &:checked {
         background-color: #4a74ff;
@@ -316,6 +390,10 @@ section {
         height: 10px;
         border: solid white;
         border-width: 0 2px 2px 0;
+
+        @media screen and (max-width: $breakpoint__mobile) {
+          top: 46%;
+        }
       }
     }
 
