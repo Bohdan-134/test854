@@ -1,0 +1,61 @@
+@use '../utils/_vars.scss' as *;
+
+.section-features {
+    margin: 0 0 172px 0;
+
+    @media screen and (max-width: $breakpoint__mobile) {
+        margin: 0 0 57px 0;
+    }
+
+    .section-content {
+        margin: 0 auto;
+        max-width: 800px;
+    }
+
+    h2 {
+        text-align: center;
+        margin: 0 0 48px 0;
+
+        @media screen and (max-width: $breakpoint__mobile) {
+            margin: 0 0 30px 0;
+        }
+    }
+
+    .features-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        @media screen and (max-width: $breakpoint__mobile)  {
+            gap: 20px;
+        }
+    }
+
+    .features-item {
+        padding: 42px 130px;
+        width: 100%;
+        background-color: $color__white;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+
+        @media screen and (max-width: $breakpoint__mobile) {
+            padding: 40px 30px 32px 30px;
+            border-radius: 30px;
+            flex-direction: column;
+
+            p {
+                text-align: center;
+            }
+
+        }
+
+        img {
+            width: 36px;
+            height: 36px;
+        }
+
+    }
+}

@@ -1,0 +1,67 @@
+@use "./__vars.scss" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: $font-family__main;
+}
+
+body,
+h1, h2, h3, h4, h5, h6,
+p, figure,
+blockquote, dl, dd {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  color: $color-text__main;
+  background-color: #F6F7FA;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+a {
+  transition: .3s;
+  
+  &:hover {
+    color: $color__blue;
+  }
+
+}

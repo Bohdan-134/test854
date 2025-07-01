@@ -1,0 +1,17 @@
+# Mac system files
+.DS_Store
+
+# Node modules and log files
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output
+dist/
+
+# Vercel
+.vercel/
+
+# Env
+.env

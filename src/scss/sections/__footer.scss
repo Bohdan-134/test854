@@ -1,0 +1,76 @@
+@use '../utils/_vars.scss' as *;
+
+.footer {
+    padding: 103px 40px 90px 40px;
+    background-color: $color__white;
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 100px;
+
+        @media screen and (max-width: $breakpoint__mobile) {
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+
+    .footer-info__list {
+
+        li {
+
+            &:not(:last-child) {
+                margin: 0 0 22px 0;
+
+                @media screen and (max-width: $breakpoint__mobile) {
+                    margin: 0 0 10px 0;
+                }
+            }
+
+        }
+
+    }
+
+    .footer-navigation {
+        display: flex;
+        gap: 145px;
+        flex-wrap: wrap;
+
+        @media screen and (max-width: $breakpoint__mobile) {
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .list {
+
+            li {
+
+                &:first-child {
+                    font-size: 22px;
+                    font-weight: 600;
+                    margin: 0 0 40px 0;
+
+                    @media screen and (max-width: $breakpoint__mobile) {
+                        font-size: 16px;
+                        margin: 0 0 12px 0;
+                    }
+                }
+
+                &:not(:first-child):not(:last-child) {
+                    margin: 0 0 20px 0;
+
+                    @media screen and (max-width: $breakpoint__mobile) {
+                        margin: 0 0 11px 0;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    @media screen and (max-width: $breakpoint__mobile) {
+        padding: 52px 20px;
+    }
+}

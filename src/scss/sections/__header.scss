@@ -1,0 +1,18 @@
+@use '../utils/_vars.scss' as *;
+
+.header {
+    padding: 48px 40px 0 40px;
+    margin: 0 0 76px 0;
+
+    .header-content {
+
+        .btn-wrapper {
+            margin: 0 0 0 auto;
+        }
+
+    }
+
+    @media screen and (max-width: $breakpoint__mobile) {
+        display: none;
+    }
+}
